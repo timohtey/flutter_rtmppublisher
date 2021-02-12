@@ -24,6 +24,7 @@ and for iOS I use
 * Snapshots can be captured and saved to a file.
 * Record video.
 * Add access to the image stream from Dart.
+* Zoom while recording video.
 
 ## Installation
 
