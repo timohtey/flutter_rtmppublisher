@@ -946,7 +946,7 @@ class CameraController extends ValueNotifier<CameraValue> {
 
     try {
       return await _channel.invokeMethod<double>(
-        'getMaxZoomLevel',
+        'getMinZoomLevel',
         <String, dynamic>{'textureId': _textureId},
       );
     } on PlatformException catch (e) {

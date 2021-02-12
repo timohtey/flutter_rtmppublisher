@@ -113,4 +113,22 @@ class MockCameraConfigurator extends CameraConfigurator {
 
   @override
   Future<void> stop() => Future<void>.value();
+
+  @override
+  Future<double> getMaxZoomLevel() {
+    // TODO: implement getMaxZoomLevel
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<double> getMinZoomLevel() {
+    // TODO: implement getMinZoomLevel
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setZoomLevel(double zoom) {
+    // TODO: implement setZoomLevel
+    throw UnimplementedError();
+  }
 }

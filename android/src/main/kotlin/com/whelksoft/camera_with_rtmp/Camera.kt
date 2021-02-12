@@ -199,6 +199,9 @@ class Camera(
             // Create a new capture session with all this stuff in it.
             val captureBuilder = cameraDevice!!.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE)
             captureBuilder.addTarget(pictureImageReader!!.surface)
+            captureBuilder.set(
+                    CaptureRequest.SCALER_CROP_REGION,
+                    captureRequestBuilder!!.get(CaptureRequest.SCALER_CROP_REGION))
             captureBuilder.set(CaptureRequest.JPEG_ORIENTATION, mediaOrientation)
             cameraCaptureSession!!.capture(
                     captureBuilder.build(),
