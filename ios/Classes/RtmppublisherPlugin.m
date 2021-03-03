@@ -925,7 +925,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
         result(getFlutterError(error));
         return;
     }
-    [_captureDevice rampToVideoZoomFactor:zoom withRate:1];
+    _captureDevice.videoZoomFactor = zoom;
     [_captureDevice unlockForConfiguration];
 
     result(nil);
